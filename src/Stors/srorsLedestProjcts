@@ -1,0 +1,130 @@
+import React from 'react';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import "./latestProduct.css"
+import sss from "../../../../assets/img/latest-product/lp-1.jpg"
+const LatestProduct = () => {
+  const owlOptions = {
+    loop: true,
+    margin: 0,
+    items: 1,
+    dots: false,
+    nav: true,
+    navText: [
+      "<span class='fa fa-angle-left'></span>",
+      "<span class='fa fa-angle-right'></span>",
+    ],
+    smartSpeed: 1200,
+    autoHeight: false,
+    autoplay: true,
+  };
+
+  return (
+    <section className="latest-product spad">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 col-md-6">
+            <div className="latest-product__text">
+              <h4 className='ss'>Latest Products</h4>
+           <OwlCarousel {...owlOptions}>
+                <div className="latest-prdouct__slider__item">
+                  <a href="#" className="latest-product__item">
+                    <div className="latest-product__item__pic">
+                      <img src={sss}alt="" />
+                    </div>
+                    <div className="latest-product__item__text">
+                      <h6>Crab Pool Security</h6>
+                      <span>$30.00</span>
+                    </div>
+                  </a>
+                  <a href="#" className="latest-product__item">
+                    <div className="latest-product__item__pic">
+                    <img src={sss}alt="" />
+                    </div>
+                    <div className="latest-product__item__text">
+                      <h6>Crab Pool Security</h6>
+                      <span>$30.00</span>
+                    </div>
+                  </a>
+                  <a href="#" className="latest-product__item">
+                    <div className="latest-product__item__pic">
+                    <img src={sss}alt="" />                    </div>
+                    <div className="latest-product__item__text">
+                      <h6>Crab Pool Security</h6>
+                      <span>$30.00</span>
+                    </div>
+                  </a>
+                </div>
+
+
+
+                <div className="latest-prdouct__slider__item">
+                  <a href="#" className="latest-product__item">
+                    <div className="latest-product__item__pic">
+                      <img src="img/latest-product/lp-1.jpg" alt="" />
+                    </div>
+                    <div className="latest-product__item__text">
+                      <h6>Crab Pool Security</h6>
+                      <span>$30.00</span>
+                    </div>
+                  </a>
+                  <a href="#" className="latest-product__item">
+                    <div className="latest-product__item__pic">
+                      <img src="img/latest-product/lp-2.jpg" alt="" />
+                    </div>
+                    <div className="latest-product__item__text">
+                      <h6>Crab Pool Security</h6>
+                      <span>$30.00</span>
+                    </div>
+                  </a>
+                  <a href="#" className="latest-product__item">
+                    <div className="latest-product__item__pic">
+                      <img src="img/latest-product/lp-3.jpg" alt="" />
+                    </div>
+                    <div className="latest-product__item__text">
+                      <h6>Crab Pool Security</h6>
+                      <span>$30.00</span>
+                    </div>
+                  </a>
+                </div>
+                <div className="latest-prdouct__slider__item">
+                  <a href="#" className="latest-product__item">
+                    <div className="latest-product__item__pic">
+                      <img src="img/latest-product/lp-1.jpg" alt="" />
+                    </div>
+                    <div className="latest-product__item__text">
+                      <h6>Crab Pool Security</h6>
+                      <span>$30.00</span>
+                    </div>
+                  </a>
+                  <a href="#" className="latest-product__item">
+                    <div className="latest-product__item__pic">
+                      <img src="img/latest-product/lp-2.jpg" alt="" />
+                    </div>
+                    <div className="latest-product__item__text">
+                      <h6>Crab Pool Security</h6>
+                      <span>$30.00</span>
+                    </div>
+                  </a>
+                  <a href="#" className="latest-product__item">
+                    <div className="latest-product__item__pic">
+                      <img src="img/latest-product/lp-3.jpg" alt="" />
+                    </div>
+                    <div className="latest-product__item__text">
+                      <h6>Crab Pool Security</h6>
+                      <span>$30.00</span>
+                    </div>
+                  </a>
+                </div>
+              </OwlCarousel>
+            </div>
+          </div>
+          {/* The code for "Top Rated Products" and "Review Products" sections can be similarly structured */}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default LatestProduct;
